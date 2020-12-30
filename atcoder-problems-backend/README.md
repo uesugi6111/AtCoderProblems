@@ -74,5 +74,8 @@ cargo run --bin fix_invalid_submissions
 
 ```bash
 # Before starting the tests, make sure that the database they connect to is running.
+# The following command will start a PostgreSQL server in a Docker container.
+docker-compose up postgresql
+
 cargo test --workspace -- --test-threads=1
 ```
